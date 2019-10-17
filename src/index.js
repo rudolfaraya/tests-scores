@@ -14,17 +14,23 @@ import './customs.scss'
 // Data
 import scores from '../src/scores/enrollment'
 
-export default class ExampleComponent extends Component {
+export default class EnrollmentScores extends Component {
   render() {
     return (
       <div className='container'>
         <Header
-          personal_data={scores}
+          main_data={scores.main_data}
         />
         <div className='row'>
           <div className='col-md-12'>
-            <CognitiveCard />
-            <PersonalityCard />
+            <CognitiveCard
+              cognitiveDataTitle={scores.cognitive_data.title}
+              cognitiveDataDescription={scores.cognitive_data.description}
+              cognitiveDataScores={scores.cognitive_data.scores}
+            />
+            <PersonalityCard
+              personality_data={scores.personality_data}
+            />
           </div>
         </div>
       </div>
