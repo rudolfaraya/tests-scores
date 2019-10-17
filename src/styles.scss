@@ -1,0 +1,67 @@
+/* add Scss styles here (optional) */
+
+/* Show */
+
+// Progress bar height and color number
+.progress {
+  height: 1.2rem;
+  .progress-bar span {
+    font-size: 0.9rem;
+  }
+}
+.text-shadow {
+  text-shadow: 1px 1px 0px #333;
+}
+.big-badge {
+  width: 100px;
+}
+.total-score {
+  width: 90px;
+}
+// Progress bar load animation
+.progress-bar {
+  width: 0;
+  animation: progress 1.5s ease-in-out forwards;
+  span {
+    opacity: 0;
+    animation: show 0.35s forwards ease-in-out 0.5s;
+  }
+}
+@keyframes progress {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+@keyframes show {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.relative-item {
+  position: relative;
+}
+.indicator {
+  position: absolute;
+  z-index: 5;
+  height: 26px;
+  top: -4px;
+  .btn {
+    position: absolute;
+    right: -12px;
+    line-height: 0;
+    font-size: 25px;
+    text-shadow: 1px 1px 1px #fff;
+    color: #5a3ee0;
+    background-color: #fff;
+    border-radius: 50%;
+  }
+}
+
+

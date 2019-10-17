@@ -1,21 +1,32 @@
+// Dependencies
 import React, { Component } from 'react'
-import PropTypes from 'prop-types'
 
-import styles from './styles.css'
+// Components
+import Header from './components/Header'
+import CognitiveCard from './components/CognitiveCard'
+import PersonalityCard from './components/PersonalityCard'
+
+// Assets
+import 'bootstrap/dist/css/bootstrap.css'
+import './styles.scss'
+import './customs.scss'
+
+// Data
+import scores from '../src/scores/enrollment'
 
 export default class ExampleComponent extends Component {
-  static propTypes = {
-    text: PropTypes.string
-  }
-
   render() {
-    const {
-      text
-    } = this.props
-
     return (
-      <div className={styles.test}>
-        Example Component: {text}
+      <div className='container'>
+        <Header
+          personal_data={scores}
+        />
+        <div className='row'>
+          <div className='col-md-12'>
+            <CognitiveCard />
+            <PersonalityCard />
+          </div>
+        </div>
       </div>
     )
   }
