@@ -1,5 +1,7 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faAtom } from '@fortawesome/free-solid-svg-icons'
 
 import CompletedInfo from './CompletedInfo'
 
@@ -19,6 +21,8 @@ class PersonalityTitle extends Component {
       testsCompleted,
       testsTotal} = this.props
 
+    const iconAtom = <FontAwesomeIcon icon={faAtom} />
+
     return (
       <div className='card-header __with_collapsible-icons' id='headingPersonalitySkills'>
         <button aria-controls='collapsePersonalitySkills' aria-expanded='true'
@@ -27,7 +31,7 @@ class PersonalityTitle extends Component {
           <div className='row d-flex align-items-center'>
             <div className='col-lg-10 col-sm-8'>
               <div className='d-inline-block w-100 d-flex align-items-center my-1'>
-                <i className='fas fa-brain fa-pull-left h4 mb-0' />
+                <i className='fas fa-pull-left h4 mb-0'>{iconAtom}</i>
                 <h3 className='h4 mb-0 d-inline-block'>{title}</h3>
               </div>
               <p className='small text-muted mb-0 pr-2 pr-sm-0'>{description}</p>

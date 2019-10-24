@@ -1,5 +1,8 @@
+// Dependencies
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faBrain } from '@fortawesome/free-solid-svg-icons'
 
 import CompletedInfo from './CompletedInfo'
 
@@ -19,6 +22,8 @@ class CognitiveTitle extends Component {
       testsCompleted,
       testsTotal} = this.props
 
+    const iconBrain = <FontAwesomeIcon icon={faBrain} />
+
     return (
       <div className='card-header __with_collapsible-icons' id='headingCognitiveSkills'>
         <button aria-controls='collapseCognitiveSkills' aria-expanded='true'
@@ -27,7 +32,7 @@ class CognitiveTitle extends Component {
           <div className='row d-flex align-items-center'>
             <div className='col-lg-10 col-sm-8'>
               <div className='d-inline-block w-100 d-flex align-items-center my-1'>
-                <i className='fas fa-brain fa-pull-left h4 mb-0' />
+                <i className='fas fa-pull-left h4 mb-0'>{iconBrain}</i>
                 <h3 className='h4 mb-0 d-inline-block'>{title}</h3>
               </div>
               <p className='small text-muted mb-0 pr-2 pr-sm-0'>{description}</p>
