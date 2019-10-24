@@ -8,22 +8,27 @@ import CognitiveCompetencies from './CognitiveCompetencies'
 
 class CognitiveCard extends Component {
   static propTypes = {
-    cognitiveDataTitle: PropTypes.string.isRequired,
-    cognitiveDataDescription: PropTypes.string.isRequired,
+    cognitiveDataMain: PropTypes.object.isRequired,
     cognitiveDataScores: PropTypes.array.isRequired
   }
 
   render() {
-    const {cognitiveDataTitle, cognitiveDataDescription, cognitiveDataScores} = this.props
+    const {
+      cognitiveDataMain,
+      cognitiveDataScores
+    } = this.props
 
     return (
       <div className='card cognitive-results mb-3'>
         <CognitiveTitle
-          title={{cognitiveDataTitle}}
-          description={{cognitiveDataDescription}}
+          title={cognitiveDataMain.title}
+          description={cognitiveDataMain.description}
+          score={cognitiveDataMain.cognitive_score}
+          testsCompleted={cognitiveDataMain.count_rendered}
+          testsTotal={cognitiveDataMain.count_total}
         />
         <CognitiveCompetencies
-          scores={{cognitiveDataScores}}
+          scores={cognitiveDataScores}
         />
       </div>
     )

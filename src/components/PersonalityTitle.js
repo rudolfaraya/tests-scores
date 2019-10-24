@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 
 import CompletedInfo from './CompletedInfo'
 
-class CognitiveTitle extends Component {
+class PersonalityTitle extends Component {
   static propTypes = {
     title: PropTypes.string.isRequired,
     description: PropTypes.string.isRequired,
@@ -20,10 +20,10 @@ class CognitiveTitle extends Component {
       testsTotal} = this.props
 
     return (
-      <div className='card-header __with_collapsible-icons' id='headingCognitiveSkills'>
-        <button aria-controls='collapseCognitiveSkills' aria-expanded='true'
+      <div className='card-header __with_collapsible-icons' id='headingPersonalitySkills'>
+        <button aria-controls='collapsePersonalitySkills' aria-expanded='true'
           className='btn btn-link no_underline p-0 d-block text-left text-dark w-100'
-          data-target='#collapseCognitiveSkills' data-toggle='collapse' type='button'>
+          data-target='#collapsePersonalitySkills' data-toggle='collapse' type='button'>
           <div className='row d-flex align-items-center'>
             <div className='col-lg-10 col-sm-8'>
               <div className='d-inline-block w-100 d-flex align-items-center my-1'>
@@ -52,4 +52,4 @@ class CognitiveTitle extends Component {
   }
 }
 
-export default CognitiveTitle
+export default PersonalityTitle

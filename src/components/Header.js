@@ -7,11 +7,11 @@ import CompletedInfo from './CompletedInfo'
 
 class Header extends Component {
   static propTypes = {
-    main_data: PropTypes.object.isRequired
+    mainData: PropTypes.object.isRequired
   }
 
   render() {
-    const mainData = this.props.main_data
+    const mainData = this.props.mainData
 
     return (
       <div className='row'>
@@ -44,7 +44,10 @@ class Header extends Component {
                     <h2 className='h3 mb-0 font-weight-bold'>{mainData.main_score}%</h2>
                     <small>Puntaje Total</small>
                   </span>
-                  <CompletedInfo />
+                  <CompletedInfo
+                    testsCompleted={mainData.count_rendered}
+                    testsTotal={mainData.count_total}
+                  />
                 </div>
               </div>
             </div>
