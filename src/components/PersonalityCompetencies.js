@@ -1,15 +1,16 @@
 import React, { Component } from 'react'
-import PropTypes from 'prop-types'
 import Score from './Score/Score'
+import PropTypes from 'prop-types'
 
-class CognitiveCompetencies extends Component {
+class PersonalityCompetencies extends Component {
   static propTypes = {
     scores: PropTypes.array.isRequired
   }
   render() {
     const scores = this.props.scores
+
     return (
-      <div aria-labelledby='headingCognitiveSkills' className='collapse show' id='collapseCognitiveSkills'>
+      <div aria-labelledby='headingPersonalityTrait' className='collapse show' id='collapsePersonalityTrait'>
         <div className='list-group list-group-flush d-flex flex-row flex-wrap border-0'>
           {scores.map((score) =>
             <Score score={score} key={score.id} />
@@ -20,4 +21,4 @@ class CognitiveCompetencies extends Component {
   }
 }
 
-export default CognitiveCompetencies
+export default PersonalityCompetencies
