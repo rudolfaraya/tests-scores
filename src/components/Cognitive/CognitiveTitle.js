@@ -1,11 +1,12 @@
+// Dependencies
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faAtom } from '@fortawesome/free-solid-svg-icons'
+import { faBrain } from '@fortawesome/free-solid-svg-icons'
 
 import CompletedInfo from './CompletedInfo'
 
-class PersonalityTitle extends Component {
+class CognitiveTitle extends Component {
   static propTypes = {
     title: PropTypes.string.isRequired,
     description: PropTypes.string.isRequired,
@@ -21,17 +22,18 @@ class PersonalityTitle extends Component {
       testsCompleted,
       testsTotal} = this.props
 
-    const iconAtom = <FontAwesomeIcon icon={faAtom} />
+    const iconBrain = <FontAwesomeIcon icon={faBrain} />
 
     return (
-      <div className='card-header __with_collapsible-icons' id='headingPersonalitySkills'>
-        <button aria-controls='collapsePersonalitySkills' aria-expanded='true'
+      <div className='card-header __with_collapsible-icons' id='headingCognitiveSkills'>
+        <button aria-controls='collapseCognitiveSkills' aria-expanded='true'
           className='btn btn-link no_underline p-0 d-block text-left text-dark w-100'
-          data-target='#collapsePersonalitySkills' data-toggle='collapse' type='button'>
+          data-target='#collapseCognitiveSkills' data-toggle='collapse' type='button'
+          style={{ textDecoration: 'none' }} >
           <div className='row d-flex align-items-center'>
             <div className='col-lg-10 col-sm-8'>
               <div className='d-inline-block w-100 d-flex align-items-center my-1'>
-                <i className='fas fa-pull-left h4 mb-0'>{iconAtom}</i>
+                <i className='fas fa-pull-left h4 mb-0'>{iconBrain}</i>
                 <h3 className='h4 mb-0 d-inline-block'>{title}</h3>
               </div>
               <p className='small text-muted mb-0 pr-2 pr-sm-0'>{description}</p>
@@ -39,7 +41,7 @@ class PersonalityTitle extends Component {
             <div className='col-lg-2 col-sm-4'>
               <span className='badge badge-pill big-badge text-center d-flex align-items-center justify-content-center p-2 my-2 ml-auto mx-md-auto badge-primary'
                 data-placement='top' data-toggle='tooltip' title=''
-                data-original-title='Measurement Total Average'>
+                data-original-title='Puntaje Cognitivo'>
                 <span className='h6 font-weight-bold mb-0'>
                   {score}%
                 </span>
@@ -56,4 +58,4 @@ class PersonalityTitle extends Component {
   }
 }
 
-export default PersonalityTitle
+export default CognitiveTitle
