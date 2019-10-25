@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import Score from './Score/Score'
+import Score from '../Score/Score'
 import PropTypes from 'prop-types'
 
 class PersonalityCompetencies extends Component {

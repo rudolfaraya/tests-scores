@@ -3,8 +3,8 @@ import React, { Component } from 'react'
 
 // Components
 import Header from './components/Header'
-import CognitiveCard from './components/CognitiveCard'
-import PersonalityCard from './components/PersonalityCard'
+import CognitiveCard from './components/Cognitive/CognitiveCard'
+import PersonalityCard from './components/Personality/PersonalityCard'
 
 // Assets
 import 'bootstrap/dist/css/bootstrap.css'

@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
-import Score from './Score/Score'
+import Score from '../Score/Score'
 
 class CognitiveCompetencies extends Component {
   static propTypes = {
