@@ -3,13 +3,17 @@ import React, { Component } from 'react'
 
 // Components
 import Header from './components/Header'
-import CognitiveCard from './components/CognitiveCard'
-import PersonalityCard from './components/PersonalityCard'
+import CognitiveCard from './components/Cognitive/CognitiveCard'
+import PersonalityCard from './components/Personality/PersonalityCard'
 
 // Assets
 import 'bootstrap/dist/css/bootstrap.css'
-import './styles.scss'
-import './customs.scss'
+import './scss/styles.scss'
+import './scss/customs.scss'
+import './scss/commons.scss'
+import './scss/enrollments.scss'
+import './scss/landing.scss'
+import './scss/test.scss'
 
 // Data
 import scores from '../src/scores/enrollment'
