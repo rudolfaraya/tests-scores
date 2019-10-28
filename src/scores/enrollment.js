@@ -10,8 +10,8 @@ export default
     'invitation_opened_at': '16/10/19 13:46',
     'process_id': 9,
     'process_name': 'F - Proceso de Prueba 4Talent',
-    'profile_id': null,
-    'profile_name': 'no_profile',
+    'profile_id': 2,
+    'profile_name': 'Perfil Cajero Banco Estado',
     'main_score': 55,
     'count_rendered': 10,
     'count_total': 11

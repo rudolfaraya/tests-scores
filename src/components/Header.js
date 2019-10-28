@@ -4,7 +4,7 @@ import PropTypes from 'prop-types'
 
 // Components
 import CompletedInfo from './TestNumber/CompletedInfo'
-import Profile from './Profile'
+import Profile from './Profile/Profile'
 
 class Header extends Component {
   static propTypes = {
