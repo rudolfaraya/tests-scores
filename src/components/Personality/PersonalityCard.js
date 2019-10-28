@@ -19,7 +19,7 @@ class PersonalityCard extends Component {
     } = this.props
 
     return (
-      <div className='card cognitive-results mb-3'>
+      <div className='card personality-results mb-3'>
         <PersonalityTitle
           title={personalityDataMain.title}
           description={personalityDataMain.description}

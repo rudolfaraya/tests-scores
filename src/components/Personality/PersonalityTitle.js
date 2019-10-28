@@ -24,10 +24,10 @@ class PersonalityTitle extends Component {
     const iconAtom = <FontAwesomeIcon icon={faAtom} />
 
     return (
-      <div className='card-header __with_collapsible-icons' id='headingPersonalitySkills'>
-        <button aria-controls='collapsePersonalitySkills' aria-expanded='true'
+      <div className='card-header __with_collapsible-icons' id='headingPersonalityTrait'>
+        <button aria-controls='collapsePersonalityTrait' aria-expanded='true'
           className='btn btn-link no_underline p-0 d-block text-left text-dark w-100'
-          data-target='#collapsePersonalitySkills' data-toggle='collapse' type='button'
+          data-target='#collapsePersonalityTrait' data-toggle='collapse' type='button'
           style={{ textDecoration: 'none' }} >
           <div className='row d-flex align-items-center'>
             <div className='col-lg-10 col-sm-8'>
