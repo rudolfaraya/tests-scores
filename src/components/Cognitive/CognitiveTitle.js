@@ -4,7 +4,7 @@ import PropTypes from 'prop-types'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBrain } from '@fortawesome/free-solid-svg-icons'
 
-import CompletedInfo from '../CompletedInfo'
+import CompletedInfo from '../TestNumber/CompletedInfo'
 
 class CognitiveTitle extends Component {
   static propTypes = {

@@ -10,6 +10,7 @@ export default
     'invitation_opened_at': '16/10/19 13:46',
     'process_id': 9,
     'process_name': 'F - Proceso de Prueba 4Talent',
+    'profile_id': null,
     'profile_name': 'no_profile',
     'main_score': 55,
     'count_rendered': 10,

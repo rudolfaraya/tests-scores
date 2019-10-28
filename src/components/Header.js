@@ -3,7 +3,7 @@ import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 
 // Components
-import CompletedInfo from './CompletedInfo'
+import CompletedInfo from './TestNumber/CompletedInfo'
 
 class Header extends Component {
   static propTypes = {
