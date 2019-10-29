@@ -3,11 +3,14 @@
 // Links
 .no-underline {
   &:hover, &:active, &:focus {
-    text-decoration: none;
+    text-decoration: none !important;
   }
 }
 
 /* Show */
+.text-primary {
+  color: #5a3ee0 !important;
+}
 
 // Progress bar height and color number
 .progress {
@@ -26,6 +29,15 @@
 .badge-secondary {
   background-color: #20bcfa !important;
 }
+
+.badge-primary {
+  background-color: #5a3ee0 !important;
+}
+
+.border-primary {
+  border-color: #5a3ee0 !important;
+}
+
 .total-score {
   width: 90px;
 }

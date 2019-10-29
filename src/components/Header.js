@@ -30,7 +30,7 @@ class Header extends Component {
                     <small className='d-block'>{mainData.email}</small>
                   </h2>
                   <span className='badge badge-success'>
-                    <i className='fas mr-1' />Estado: {mainData.status}
+                    <i className='fas mr-1' />Estado: {mainData.es_status}
                   </span>
                 </div>
                 <Profile profileName={mainData.profile_name} profileId={mainData.profile_id} />
