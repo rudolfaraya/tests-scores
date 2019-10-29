@@ -6,11 +6,13 @@ export default
     'last_name': 'Fernández',
     'email': 'rfernand@4talent.cl',
     'status': 'tests_completed',
+    'es_status': 'Pruebas completadas',
     'enrollment_id': 42,
     'invitation_opened_at': '16/10/19 13:46',
     'process_id': 9,
     'process_name': 'F - Proceso de Prueba 4Talent',
-    'profile_name': 'no_profile',
+    'profile_id': 2,
+    'profile_name': 'Perfil Cajero Banco Estado',
     'main_score': 55,
     'count_rendered': 10,
     'count_total': 11
@@ -36,8 +38,8 @@ export default
         'es_low_level': 'No Planifica',
         'en_tooltip': 'Faced with a logical problem, the tool measures the effectiveness of the movements it performs. Does it test or plan before acting?',
         'es_tooltip': 'Frente a un problema lógico, la herramienta mide la efectividad de los movimientos que realiza ¿Hace pruebas o planifica antes de actuar?',
-        'optimal_score': 70.0,
-        'profiled_score': 65.0761734280586,
+        'optimal_score': 80.0,
+        'profiled_score': 32.0761734280586,
         'score': 63.5990648849863
       },
       {
@@ -52,7 +54,7 @@ export default
         'es_low_level': 'Monofuncional',
         'en_tooltip': "In this test the person's ability to progressively perform more tasks and their level of effectiveness is evaluated",
         'es_tooltip': 'En este test se evalúa la habilidad de la persona para realizar progresivamente más tareas y su nivel de efectividad',
-        'optimal_score': 70.0,
+        'optimal_score': 90.0,
         'profiled_score': 65.0761734280586,
         'score': 86.7264049330735
       },
@@ -82,7 +84,7 @@ export default
         'es_low_level': 'Impreciso',
         'en_tooltip': 'Faced with numerical patterns for a limited time, how accurate is the person to retain and reproduce the pattern?',
         'es_tooltip': 'Frente a patrones numéricos por un tiempo limitado, ¿Cuán precisa es la persona para retener y reproducir el patrón?',
-        'optimal_score': 70.0,
+        'optimal_score': 60.0,
         'profiled_score': 65.0761734280586,
         'score': 51.9172925077434
       },
@@ -98,7 +100,7 @@ export default
         'es_low_level': 'Lento',
         'en_tooltip': 'This test measures the speed of adaptation against a change of tasks',
         'es_tooltip': 'Este test mide la velocidad de adaptación frente a un cambio de tareas',
-        'optimal_score': 70.0,
+        'optimal_score': 75.0,
         'profiled_score': 65.0761734280586,
         'score': 34.8143611241782
       },
@@ -114,7 +116,7 @@ export default
         'es_low_level': 'Inflexible',
         'en_tooltip': 'How difficult is it for a person to adapt to different conditions or rules?',
         'es_tooltip': '¿Cuán dificil es para una persona adaptarse a condiciones o reglas distintas?',
-        'optimal_score': 70.0,
+        'optimal_score': 40.0,
         'profiled_score': 65.0761734280586,
         'score': 82.2537908928733
       }
@@ -140,7 +142,7 @@ export default
         'es_low_level': 'Impulsivo',
         'en_tooltip': "In this test the person's ability to progressively perform more tasks and their level of effectiveness is evaluated",
         'es_tooltip': 'En este test se evalúa la habilidad de la persona para realizar progresivamente más tareas y su nivel de efectividad',
-        'optimal_score': 70.0,
+        'optimal_score': 55.0,
         'profiled_score': 65.0761734280586,
         'score': 65.5884654077593
       },
@@ -156,7 +158,7 @@ export default
         'es_low_level': 'Lento',
         'en_tooltip': 'Measure the speed with which the person responds to situations and instructions',
         'es_tooltip': 'Mide la velocidad con la que la persona responde frente a situaciones e instrucciones',
-        'optimal_score': 70.0,
+        'optimal_score': 23.0,
         'profiled_score': 65.0761734280586,
         'score': 51.180347107217095
       },
@@ -172,7 +174,7 @@ export default
         'es_low_level': 'Necesita estabilidad',
         'en_tooltip': 'A greater challenge, does the person seek stability or persevere?',
         'es_tooltip': 'A mayor desafío, ¿La persona busca estabilidad o persevera?',
-        'optimal_score': 70.0,
+        'optimal_score': 52.0,
         'profiled_score': 65.0761734280586,
         'score': 40.1276392385922
       },
@@ -188,8 +190,8 @@ export default
         'es_low_level': 'No toma riesgos',
         'en_tooltip': 'The behavior of the person is evaluated by increasing risks and incentives',
         'es_tooltip': 'Se evalúa el comportamiento de la persona al incrementar riesgos e incentivos',
-        'optimal_score': 70.0,
-        'profiled_score': 65.0761734280586,
+        'optimal_score': 63.0,
+        'profiled_score': 79.0761734280586,
         'score': 49.3890572833393
       },
       {
@@ -204,7 +206,7 @@ export default
         'es_low_level': 'Pesimista al riesgo',
         'en_tooltip': 'The behavior of the person is assessed against risks and loss situations',
         'es_tooltip': 'Se evalúa el comportamiento de la persona frente a riesgos y situaciones de pérdida',
-        'optimal_score': 70.0,
+        'optimal_score': 95.0,
         'profiled_score': 65.0761734280586,
         'score': 46.1683344436965
       }

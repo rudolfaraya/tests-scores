@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faAtom } from '@fortawesome/free-solid-svg-icons'
 
-import CompletedInfo from '../CompletedInfo'
+import CompletedInfo from '../TestNumber/CompletedInfo'
 
 class PersonalityTitle extends Component {
   static propTypes = {
@@ -24,11 +24,10 @@ class PersonalityTitle extends Component {
     const iconAtom = <FontAwesomeIcon icon={faAtom} />
 
     return (
-      <div className='card-header __with_collapsible-icons' id='headingPersonalitySkills'>
+      <div className='card-header __with_collapsible-icons' id='headingPersonalityTrait'>
         <button aria-controls='collapsePersonalitySkills' aria-expanded='true'
-          className='btn btn-link no_underline p-0 d-block text-left text-dark w-100'
-          data-target='#collapsePersonalitySkills' data-toggle='collapse' type='button'
-          style={{ textDecoration: 'none' }} >
+          className='btn btn-link no-underline p-0 d-block text-left text-dark w-100'
+          data-target='#collapsePersonalityTrait' data-toggle='collapse' type='button'>
           <div className='row d-flex align-items-center'>
             <div className='col-lg-10 col-sm-8'>
               <div className='d-inline-block w-100 d-flex align-items-center my-1'>
