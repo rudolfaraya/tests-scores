@@ -21,7 +21,9 @@ class Score extends Component {
         <ScoreBar
           score={score.score}
           lowLevel={score.es_low_level}
-          highLevel={score.es_high_level} />
+          highLevel={score.es_high_level}
+          profiledScore={score.profiled_score}
+          optimalScore={score.optimal_score} />
       </div>
     )
   }

@@ -3,7 +3,8 @@ import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 
 // Components
-import CompletedInfo from './CompletedInfo'
+import CompletedInfo from './TestNumber/CompletedInfo'
+import Profile from './Profile/Profile'
 
 class Header extends Component {
   static propTypes = {
@@ -29,16 +30,10 @@ class Header extends Component {
                     <small className='d-block'>{mainData.email}</small>
                   </h2>
                   <span className='badge badge-success'>
-                    <i className='fas mr-1' />Estado: {mainData.status}
+                    <i className='fas mr-1' />Estado: {mainData.es_status}
                   </span>
                 </div>
-                <div className='col-md-2 col-6 text-right'>
-                  <span className='badge rounded-lg total-score text-center p-3 my-2 mx-auto text-wrap badge-light border border-dark text-muted'>
-                    <p className='mb-0'>Perfil</p>
-                    <i className='fas fa-user fa-3x my-2 d-block' />
-                    <small>{mainData.profile_name}</small>
-                  </span>
-                </div>
+                <Profile profileName={mainData.profile_name} profileId={mainData.profile_id} />
                 <div className='col-md-2 pl-md-0 col-6 text-right'>
                   <span className='badge rounded-lg total-score text-center p-3 my-2 mx-auto badge-secondary'>
                     <h2 className='h3 mb-0 font-weight-bold'>{mainData.main_score}%</h2>

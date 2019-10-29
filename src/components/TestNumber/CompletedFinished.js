@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 
-class CompletedInfo extends Component {
+class CompletedFinished extends Component {
   static propTypes = {
     testsCompleted: PropTypes.number.isRequired,
     testsTotal: PropTypes.number.isRequired
@@ -9,9 +9,9 @@ class CompletedInfo extends Component {
   render() {
     const {testsCompleted, testsTotal} = this.props
     return (
-      <small className='text-info d-block text-right'>
+      <small className='text-success d-block text-right'>
         <strong>
-          <i className='fas fa-spinner fa-pulse mr-1' />
+          <i className='fas fa-check mr-1' />
           &nbsp;Completados {testsCompleted} de {testsTotal}
         </strong>
       </small>
@@ -19,4 +19,4 @@ class CompletedInfo extends Component {
   }
 }
 
-export default CompletedInfo
+export default CompletedFinished
