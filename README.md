@@ -15,7 +15,7 @@ npm install --save tests-scores
 ```jsx
 import React, { Component } from 'react'
 
-import MyComponent from 'tests-scores'
+import EnrollmentScores from 'tests-scores'
 
 class Example extends Component {
   render () {

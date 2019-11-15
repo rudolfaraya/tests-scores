@@ -1,5 +1,6 @@
 // Dependencies
 import React, { Component } from 'react'
+import PropTypes from 'prop-types'
 
 // Components
 import Header from './components/Header'
@@ -16,10 +17,15 @@ import './scss/landing.scss'
 import './scss/test.scss'
 
 // Data
-import scores from '../src/scores/enrollment'
+import sampleScores from '../src/scores/enrollment'
 
 export default class EnrollmentScores extends Component {
+  static propTypes = {
+    scores: PropTypes.object.isRequired
+  }
+
   render() {
+    const scores = this.props.scores
     return (
       <div className='container'>
         <Header
